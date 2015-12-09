@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleDhtActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/button_ldump" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_gdump" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/button_test" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:fadeScrollbars="true"
+        android:gravity="bottom"
+        android:maxLines="17"
+        android:scrollbars="vertical" />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    
+    <EditText 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="key"
+        android:id="@+id/et_key_id"
+        />
+    
+    <EditText 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="value"
+        android:id="@+id/et_value_id"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get"
+        android:id="@+id/bt_get"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="put"
+        android:id="@+id/bt_put"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
